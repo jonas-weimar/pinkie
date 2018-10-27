@@ -32,7 +32,7 @@ an input layer, a hidden layer and an output layer." ~ Wikipedia, 27. Oct. 2018.
 ```
 
 ### One Nearest Neighbour (1NN) Classifier
-"The most intuitive nearest neighbour type classifier is the one nearest neighbour classifier
+"The most intuitive nearest neighbour type classifier is the 1NN classifier
 that assigns a point x to the class of its closest neighbour in the feature space [...]." ~ Wikipedia, 27. Oct. 2018.
 ```python
   from pinkie.knn import Classifier
