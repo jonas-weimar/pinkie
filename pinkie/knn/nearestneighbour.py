@@ -35,7 +35,7 @@ class Classifier(object):
         for i in range(len(self.x_train)):
             dist = distance.euclidean(row, self.x_train[i])
             if dist < best_dist:
-                self.__information("Found new Group to fit: {}".format(self.x_train[i]))
+                self.__information("Found new Group to fit: {}".format(self.y_train[i]))
                 best_dist = dist
                 best_index = i
         return self.y_train[best_index]
