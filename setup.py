@@ -6,7 +6,7 @@ setup(name='pinkie',
       author='Jonas Weimar',
       author_email='jonas-weimar@web.de',
       url='https://github.com/jonas-weimar/pinkie',
-      packages=['.'],
+      packages=['.', '.mlp'],
       install_requires=[
           'termcolor',
           'tqdm',

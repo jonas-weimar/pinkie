@@ -15,6 +15,7 @@ class Network(object):
 
     # Initializer / Constructor:
     def __init__(self, shape, path="settings.npy", learning_rate=1):
+        self.id = hash(id(self))
         self.path = path
         self.weights = []
         self.shape = shape
@@ -24,7 +25,7 @@ class Network(object):
 
     # Hook methods for build in functions:
     def __str__(self):
-        return hash(id(self))
+        return "Network: " + self.id
 
     def __len__(self):
         return self.size
@@ -78,6 +79,12 @@ class Network(object):
 
 
     # Public methods:
+    def setID(self, id):
+        self.id = id
+
+    def getID(self):
+        return self.id
+
     def getShape(self):
         return self.shape
 
@@ -106,7 +113,7 @@ class Network(object):
                 self.__improve(X, Y)
             self.__success("Network is now trained on your configurations.\n")
         except Exception as e:
-            self.__error(e)
+            self.__error(e, start="Training")
 
     def guess(self, X):
         try:
