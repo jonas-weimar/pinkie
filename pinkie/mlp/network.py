@@ -25,7 +25,7 @@ class Network(object):
 
     # Hook methods for build in functions:
     def __str__(self):
-        return "Network: " + self.id
+        return "Network: " + str(self.id)
 
     def __len__(self):
         return self.size

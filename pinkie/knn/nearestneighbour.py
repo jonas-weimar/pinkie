@@ -19,7 +19,7 @@ class Classifier(object):
 
     # Hook methods for build in functions:
     def __str__(self):
-        return "Classifier: " + self.id
+        return "Classifier: " + str(self.id)
 
 
     # Private methods
