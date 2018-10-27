@@ -8,11 +8,44 @@ It has two classifiers yet - 1-Nearest Neighbour & Multilayer Perceptron.
 "A multilayer perceptron (MLP) is a class of feedforward artificial neural network.
 An MLP consists of, at least, three layers of nodes:
 an input layer, a hidden layer and an output layer." ~ Wikipedia, 27. Oct. 2018.
+```python
+  from pinkie import mlp
 
+  model = mlp.Network([
+    mlp.Layer(80*80, None),
+    mlp.Layer(512, mlp.activation.relu),
+    mlp.Layer(10, mlp.activation.tanh)
+  ], learning_rate=1e-3, path="settings.npy")
+
+  # give your classifier an id
+  model.setID(ID)
+
+  # train and save
+  model.fit(x_train, y_train, circles=1000)
+  model.saveState()
+
+  # or load and predict
+  # you can predict without loading and saving to if you fit first
+  model.loadState() # or loadForeignState(path)
+  guess = model.guess(x_topredict)
+```
 
 #### One-Nearest Neighbour (1NN) Classifier
 "The most intuitive nearest neighbour type classifier is the one nearest neighbour classifier
 that assigns a point x to the class of its closest neighbour in the feature space [...]." ~ Wikipedia, 27. Oct. 2018.
+```python
+  from pinkie.knn import Classifier
+
+  model = Classifier()
+  model.setID(ID) # give your classifier an id
+
+  # train your model
+  model.fit(x_train, y_train)
+
+  # predict one nearest neighbour
+  guess = model.predict(x_test)
+```
+
 
 
 ## Why use Pinkie
