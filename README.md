@@ -1,10 +1,11 @@
 # The Pinkie Framework
 
 ## What is Pinkie
-Pinkie is a small machine learning library. Written just to write it.
-It has two classifiers yet - 1-Nearest Neighbour & Multilayer Perceptron.
+Pinkie is a small machine learning library. Written to be understood.
+Yet it has two classifiers - One Nearest Neighbour & Multilayer Perceptron.
+Both very useful. You can extend them, you can use them, you can help me make them better and more efficient.
 
-#### Multilayer Perceptron (MLP) - Classifier
+### Multilayer Perceptron (MLP) - Classifier
 "A multilayer perceptron (MLP) is a class of feedforward artificial neural network.
 An MLP consists of, at least, three layers of nodes:
 an input layer, a hidden layer and an output layer." ~ Wikipedia, 27. Oct. 2018.
@@ -30,7 +31,7 @@ an input layer, a hidden layer and an output layer." ~ Wikipedia, 27. Oct. 2018.
   guess = model.guess(x_topredict)
 ```
 
-#### One-Nearest Neighbour (1NN) Classifier
+### One Nearest Neighbour (1NN) Classifier
 "The most intuitive nearest neighbour type classifier is the one nearest neighbour classifier
 that assigns a point x to the class of its closest neighbour in the feature space [...]." ~ Wikipedia, 27. Oct. 2018.
 ```python
