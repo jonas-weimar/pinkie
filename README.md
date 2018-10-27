@@ -18,8 +18,8 @@ an input layer, a hidden layer and an output layer." ~ Wikipedia, 27. Oct. 2018.
     mlp.Layer(10, mlp.activation.tanh)
   ], learning_rate=1e-3, path="settings.npy")
 
-  # give your classifier an id
-  model.setID(ID)
+  # build / compile your Network
+  model.build()
 
   # train and save
   model.fit(x_train, y_train, circles=1000)
