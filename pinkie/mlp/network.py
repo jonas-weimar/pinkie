@@ -104,7 +104,7 @@ class Network(object):
         for i in range(len(self.shape)-1):
             w = np.random.random((self.shape[i].neurons, self.shape[i+1].neurons))
             self.weights.append(w)
-        self.__information("Network was build by your configurations.\n")
+        self.__information("Network was build on your configurations.\n")
 
     def fit(self, X, Y, circles=1000):
         self.__information("Training process started:")
