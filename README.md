@@ -21,3 +21,8 @@ You can use your own activation functions or use the build in ones,
 you can implement new classifiers, you can tune the build in ones.
 And we can build a well working machine learning library on our own.
 Let's make this project a great library for everyone.
+
+To install Pinkie:
+´´´
+  pip install git+https://github.com/jonas-weimar/pinkie.git
+´´´
