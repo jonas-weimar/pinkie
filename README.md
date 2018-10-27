@@ -10,7 +10,7 @@ An MLP consists of, at least, three layers of nodes:
 an input layer, a hidden layer and an output layer." ~ Wikipedia, 27. Oct. 2018.
 
 
-#### 1-Nearest Neighbour (1NN) Classifier
+#### One-Nearest Neighbour (1NN) Classifier
 "The most intuitive nearest neighbour type classifier is the one nearest neighbour classifier
 that assigns a point x to the class of its closest neighbour in the feature space [...]." ~ Wikipedia, 27. Oct. 2018.
 
@@ -23,6 +23,6 @@ And we can build a well working machine learning library on our own.
 Let's make this project a great library for everyone.
 
 To install Pinkie:
-´´´
+```
   pip install git+https://github.com/jonas-weimar/pinkie.git
-´´´
+```
