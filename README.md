@@ -4,13 +4,13 @@
 Pinkie is a small machine learning library. Written just to write it.
 It has two classifiers yet - 1-Nearest Neighbour & Multilayer Perceptron.
 
-### Multilayer Perceptron (MLP) - Classifier
+#### Multilayer Perceptron (MLP) - Classifier
 "A multilayer perceptron (MLP) is a class of feedforward artificial neural network.
 An MLP consists of, at least, three layers of nodes:
 an input layer, a hidden layer and an output layer." ~ Wikipedia, 27. Oct. 2018.
 
 
-### 1-Nearest Neighbour (1NN) Classifier
+#### 1-Nearest Neighbour (1NN) Classifier
 "The most intuitive nearest neighbour type classifier is the one nearest neighbour classifier
 that assigns a point x to the class of its closest neighbour in the feature space [...]." ~ Wikipedia, 27. Oct. 2018.
 
