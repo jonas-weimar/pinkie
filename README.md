@@ -25,8 +25,8 @@ an input layer, a hidden layer and an output layer." ~ Wikipedia, 27. Oct. 2018.
   model.saveState()
 
   # or load and predict
-  # you can predict without loading and saving to if you fit first
-  model.loadState() # or loadForeignState(path)
+  # you can predict without loading and saving if you fit first
+  model.loadState() # or model.loadForeignState(path)
   guess = model.guess(x_topredict)
 ```
 
