@@ -7,7 +7,7 @@ setup(name='pinkie',
       author='Jonas Weimar',
       author_email='None',
       url='https://github.com/jonas-weimar/pinkie',
-      packages=['pinkie', 'pinkie.mlp', 'pinkie.knn'],
+      packages=['pinkie', 'pinkie.mlp', 'pinkie.knn', 'pinkie.regression'],
       install_requires=[
           'termcolor',
           'tqdm',

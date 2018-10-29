@@ -10,7 +10,7 @@ import numpy as np
 
 
 # => Nearest Neighbour Classifier
-class Classifier(object):
+class NNClassifier(object):
 
     # Initializer / Constructor:
     def __init__(self):

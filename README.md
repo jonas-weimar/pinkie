@@ -1,11 +1,10 @@
 # The Pinkie Framework
 
 ## What is Pinkie
-Pinkie is a small machine learning library. Written to be understood.
-Yet it has two classifiers - One Nearest Neighbour & Multilayer Perceptron.
-Both very useful. You can extend them, you can use them, you can help me make them better and more efficient.
+Pinkie may be the smallest machine learning library. Including the
+following machine learning models:
 
-### Multilayer Perceptron (MLP) - Classifier
+### Multilayer Perceptron (MLP)
 "A multilayer perceptron (MLP) is a class of feedforward artificial neural network.
 An MLP consists of, at least, three layers of nodes:
 an input layer, a hidden layer and an output layer." ~ Wikipedia, 27. Oct. 2018.
@@ -31,13 +30,13 @@ an input layer, a hidden layer and an output layer." ~ Wikipedia, 27. Oct. 2018.
   guess = model.guess(x_topredict)
 ```
 
-### One Nearest Neighbour (1NN) Classifier
+### One Nearest Neighbour (ONN)
 "The most intuitive nearest neighbour type classifier is the 1NN classifier
 that assigns a point x to the class of its closest neighbour in the feature space [...]." ~ Wikipedia, 27. Oct. 2018.
 ```python
-  from pinkie.knn import Classifier
+  from pinkie.knn import NNClassifier
 
-  model = Classifier()
+  model = NNClassifier()
   model.setID(ID) # give your classifier an id
 
   # train your model
@@ -45,6 +44,26 @@ that assigns a point x to the class of its closest neighbour in the feature spac
 
   # predict one nearest neighbour
   guess = model.predict(x_test)
+```
+
+### Simple Linear Regression (SLR)
+"In statistics, linear regression is a linear approach to modelling
+the relationship between a scalar response (or dependent variable)
+and one or more explanatory variables (or independent variables).
+The case of one explanatory variable is called simple linear regression." ~ Wikipedia, 27. Oct. 2018.
+```python
+from pinkie.regression import SLRModel
+
+model = SLRModel()
+
+# fit your data
+model.fit(x_train, y_train)
+
+# model coefficients
+coef = model.coef
+
+# predict new data
+guess = model.predict(x_predict)
 ```
 
 
