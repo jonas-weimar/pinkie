@@ -1,1 +1,1 @@
-from .nearestneighbour import Classifier
+from .nearestneighbour import NNClassifier
