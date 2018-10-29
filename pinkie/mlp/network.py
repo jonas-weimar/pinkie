@@ -88,6 +88,9 @@ class Network(object):
     def getShape(self):
         return self.shape
 
+    def addLayer(self, layer):
+        self.shape.append(layer)
+
     def loadState(self):
         self.weights = np.load(self.path)
         self.__information("State '{}' is loaded into network.".format(self.path))
