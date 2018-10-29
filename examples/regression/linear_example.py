@@ -5,8 +5,10 @@ import numpy as np
 # instance your model
 model = SLRModel()
 
-x = np.array([1,2,3,4,5,6,7])
-y = np.array([24, 12, 32, 12, 43, 221, 421])
+x = np.array([1,2,3,4,5,6,7,8,9,10])
+y = np.array([24, 12, 32, 12, 43, 221, 421,1242,124,422])
+
+plt.plot(x,y, 'ro')
 
 # fit your training data
 model.fit(x, y)
@@ -20,4 +22,8 @@ function = str(model)
 coef = model.coef
 
 # let model guess upcoming values
-guess = model.predict([8, 9, 10])
+guess = model.predict([1,10])
+
+plt.plot([1,10],guess)
+
+plt.show()
