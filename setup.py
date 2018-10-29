@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(name='pinkie',
-      version='1.0.1',
+      version='1.0.15',
       license='MIT',
       description='Maybe the smallest machine-learning library',
       author='Jonas Weimar',
