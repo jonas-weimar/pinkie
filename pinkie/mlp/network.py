@@ -15,7 +15,6 @@ class Network(object):
 
     # Initializer / Constructor:
     def __init__(self, shape, path="settings.npy", learning_rate=1):
-        self.id = hash(id(self))
         self.path = path
         self.weights = []
         self.shape = shape
