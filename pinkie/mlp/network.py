@@ -79,12 +79,6 @@ class Network(object):
 
 
     # Public methods:
-    def setID(self, id):
-        self.id = id
-
-    def getID(self):
-        return self.id
-
     def getShape(self):
         return self.shape
 
