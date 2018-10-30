@@ -11,8 +11,7 @@ setup(name='pinkie',
       install_requires=[
           'termcolor',
           'tqdm',
-          'numpy',
-          'matplotlib'
+          'numpy'
       ],
       download_url="https://github.com/jonas-weimar/pinkie.git",
      )
