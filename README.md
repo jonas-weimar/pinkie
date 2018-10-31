@@ -66,15 +66,6 @@ coef = model.coef
 guess = model.predict(x_predict)
 ```
 
-
-
-## Why use Pinkie
-Why not? - It's new. It's not the best. It's not from Google. - But why wouldn't you.
-You can use your own activation functions or use the build in ones,
-you can implement new classifiers, you can tune the build in ones.
-And we can build a well working machine learning library on our own.
-Let's make this project a great library for everyone.
-
 To install Pinkie:
 ```
   pip install git+https://github.com/jonas-weimar/pinkie.git
