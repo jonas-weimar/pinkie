@@ -1,7 +1,7 @@
 # The Pinkie Framework
 
 ## What is Pinkie
-Pinkie may be the smallest machine learning library. Including the
+Pinkie may be the smallest and most usless machine learning library. Including the
 following machine learning models:
 
 ### Multilayer Perceptron (MLP)
