@@ -1,4 +1,4 @@
-# The Pinkie Framework
+# The Pinkie Library
 
 ## What is Pinkie
 Pinkie may be the smallest and most usless machine learning library. Including the
